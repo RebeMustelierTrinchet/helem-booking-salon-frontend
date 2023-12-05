@@ -1,0 +1,39 @@
+.Imagen{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenIzquierda{
+    width: 35%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+.imagenDerecha{
+    width: 35%;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-bottom: 15px;
+}
+
+.texs{
+    margin-top:25%;
+    margin-bottom:10%;
+    margin-right: 10%; 
+    margin-left: 15%; 
+    /* text-align: center; */
+    padding: 0px; 
+    font-size: 250%; 
+    font-family: fantasy;
+    line-height: 10.9688px; 
+    color: aliceblue;
+    -webkit-text-stroke: 1px goldenrod; 
+     text-shadow: 0px 1px 4px #23430C;
+
+}
+.contenedorImagen{
+    margin-top: 5%;
+}

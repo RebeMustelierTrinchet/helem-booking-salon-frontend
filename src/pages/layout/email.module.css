@@ -1,0 +1,45 @@
+.contactForm{
+    margin-top: 5%;
+    margin-left: 10%; 
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5%; */
+    background-color: rgb(1, 8, 8);
+    
+}
+
+.mensaje{
+    height: 200px;
+}
+
+.contactContainer{
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 30%;
+    height: 550px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5%; */
+    background-color: rgb(1, 8, 8);
+}
+
+
+
+label{
+    color:rgba(255, 255, 255, 0.79);
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+body{
+    text-align: center;
+    background-color: rgba(31, 30, 30, 0.77);
+}
+
+.botonEnviar{
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 80%;
+}

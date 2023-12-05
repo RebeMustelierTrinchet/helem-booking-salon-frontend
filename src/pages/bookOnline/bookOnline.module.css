@@ -1,0 +1,14 @@
+td {
+    /* margin: 100px; */
+    padding: 0px 10px;
+    /* background-color: aqua; */
+}
+
+table{
+    margin-top: 7%;
+    margin-left: 2%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
