@@ -1,0 +1,23 @@
+.cardHeaderDiv{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.divPrincipal{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.starsDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.cardHeader{
+    background-color: white;
+}
+
+.commentsDiv{
+    text-align: start;
+}

@@ -1,0 +1,16 @@
+.contenedorPrincipal{
+    margin-top:5px;
+    margin-bottom: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contAccordion{
+    width: 1200px;
+}
+
+button {
+    margin: 3px;
+}

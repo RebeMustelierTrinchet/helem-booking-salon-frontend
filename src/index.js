@@ -11,6 +11,7 @@ import BookOnline from './pages/bookOnline/bookOnline';
 import Gallery from './pages/gallery/gallery';
 import ContactUs from './pages/layout/email';
 import Layout from './pages/layout/layout';
+import Faqs from './pages/faqs/faqs'
 
 
 const rootElement = document.getElementById("root");
@@ -18,7 +19,8 @@ render(
   <Router>
     <Layout>
       <Routes>
-        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/faqs" element={<Faqs />} />
         <Route exact path="/pages" element={<Pages />} />
         <Route exact path="/bookOnline" element={<BookOnline />} />
         <Route exact path="/gallery" element={<Gallery />} />

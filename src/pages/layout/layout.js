@@ -6,12 +6,15 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 import ContactUs from './email';
+import NavBar from '../../components/navbar/navbar';
+
 import BarraFinal from '../../components/barraFinal/barrafinal';
 
 export default function Layout({children}){
     return(
         <div>
-            <div className={styles.contenedorPrincipal}>
+            <NavBar/>
+            {/* <div className={styles.contenedorPrincipal}>
                 <div>
                     <img className={styles.imagen} src={Capture1}></img>
                     <img className={styles.imagen1} src={Capture}></img>
@@ -27,8 +30,8 @@ export default function Layout({children}){
                     <button className={styles.boton} ><Link to="https://www.instagram.com/hellentrinchet/">< FaInstagram/></Link></button>
                     <button className={styles.boton} ><FaTwitter /></button>
                     <button className={styles.boton} ><Link to='/emails'> <CgMail /> </Link></button>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
 
         {children}
 

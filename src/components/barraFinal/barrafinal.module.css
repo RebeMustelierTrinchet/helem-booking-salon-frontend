@@ -1,6 +1,4 @@
 .contenedorPrincipal{
-    position: fixed;
-    bottom: 0;
     width: 100%;
     height: 200px;
     padding: 0 3em;
@@ -17,7 +15,6 @@
     width:190px;
 }
 li {
-    /* background-color: aqua; */
     padding: 0;
     margin: 0;
     list-style: none;
@@ -29,12 +26,11 @@ li {
     justify-items: start;
     cursor: pointer;
 }
-li :hover{
-    cursor: pointer;
-}
+
 
 .contenedorImagen{
-    margin-left:30%;
+    margin-left:200px;
+    display: flex;
 }
 
 .imagen{
@@ -43,5 +39,99 @@ li :hover{
 .imagen1{
     height: 40px;
     position: relative;
-    top: -20px;
+    top: 20px;
+}
+
+.contenedorLista{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorLista :hover, .boton :hover{
+    color: rgba(207, 151, 46, 0.944);
+    cursor: pointer;
+}
+
+.contText{
+    margin-left: 50px;
+}
+
+.text{
+    font-size: 15px;
+}
+
+.boton{
+    margin-left: 5px;
+    border-radius: 50%;
+    text-align: center ;
+    width: 40px;
+    height: 40px;
+}
+
+.contenedorTable{
+    height: 180px;
+    width: 400px;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+
+.stiloTabla{
+    margin-top: 0px;  
+}
+
+@media all and (max-width: 700px){
+    .contenedorPrincipal{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin: auto;
+        height: max-content;
+    }
+    
+    .contenedorImagen{
+        width: 100%;
+        margin-left:0px;
+        display: flex;
+    }
+    
+    .imagen{
+        height: 80px
+    }
+    .imagen1{
+        height: 30px;
+        position: relative;
+        
+    }
+    .contLista{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+    .contenedorLista, .contText{
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .conText, .contenedorTable, .contLista{
+        margin-top: 50px;
+    }
+
+    .contenedorLista{
+        width: 100%;
+    }
+
+    .botonNav, .text{
+        font-size: 20px;
+        text-align: start;
+        margin: auto;
+        width :100%;
+    }
+    .stiloTabla{
+        display: none;  
+        margin: auto;
+    }
+
+    .footerWrapperDiv{
+        width: 100%;
+    }
 }

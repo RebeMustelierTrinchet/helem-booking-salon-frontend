@@ -1,38 +1,55 @@
 import React from "react";
-import Styles from "./bookOnline.module.css"
+import styles from "./bookOnline.module.css"
 import Layout from "../layout/layout";
 import BarraFinal from "../../components/barraFinal/barrafinal";
 
+
+const DEFAULT_TIME = "8:00 AM - 5:30 PM"
+
+const SCHEDULE = [
+    {
+        day: "Monday",
+        time: DEFAULT_TIME
+    },
+    {
+        day: "Tuesday",
+        time: DEFAULT_TIME
+    },
+    {
+        day: "Wednesday",
+        time: DEFAULT_TIME
+    },
+    {
+        day: "Thursday",
+        time: DEFAULT_TIME
+    },
+    {
+        day: "Friday",
+        time: DEFAULT_TIME
+    },
+    {
+        day: "Saturday",
+        time: DEFAULT_TIME
+    },
+    {
+        day: "Sunday",
+        time: "Close"
+    },
+]
+
 export default function BookOnline(){
     return(
-        <div>
+        <div className={styles.bookOnlineDiv}>
             <div>
                 <table>
-                    <tr>
-                    <td className={Styles.tabla}> Monday    </td>
-                    <td className={Styles.tabla}> 8:00-17.30</td>
-                    </tr>
-                    <tr>
-                    <td className={Styles.tabla}> Tuesday</td>
-                    <td className={Styles.tabla}> 8:00-17.30</td>
-                    </tr>
-                    <tr>
-                    <td className={Styles.tabla}> Thursday</td>
-                    <td className={Styles.tabla}> 8:00-17.30</td>
-                    </tr>
-                    <tr>
-                    <td className={Styles.tabla}> Friday</td>
-                    <td className={Styles.tabla}> 8:00-17.30</td>
-                    </tr>
-                    <tr>
-                    <td className={Styles.tabla}> Saturday</td>
-                    <td className={Styles.tabla}> 8:00-17.30</td>
-                    </tr>
-                    <tr>
-                    <td className={Styles.tabla}> Sanday</td>
-                    <td className={Styles.tabla}> Close</td>
-                    </tr>
-
+                    {SCHEDULE.map((item, index) => {
+                        return(
+                            <tr key={index}>
+                            <td className={styles.tabla}>{item.day}</td>
+                            <td className={styles.tabla}>{item.time}</td>
+                            </tr>
+                        );
+                     })}
                 </table>
             </div>
 

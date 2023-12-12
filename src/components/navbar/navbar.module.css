@@ -1,0 +1,30 @@
+.imagen{
+    height: 50px
+}
+.imagen1{
+    height: 15px;
+    position: relative;
+}
+
+.contenedorPrincipal{
+
+    background-color: black;
+    color: white;   
+}
+
+.boton{
+    border-radius: 50%;
+    text-align: center ;
+    width: 40px;
+    height: 40px;
+}
+
+.botonNav:hover, .boton:hover{
+    background-color: rgba(207, 151, 46, 0.944);
+}
+
+
+
+
+
+
