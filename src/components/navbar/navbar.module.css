@@ -23,6 +23,13 @@
     background-color: rgba(207, 151, 46, 0.944);
 }
 
+@media all and (max-width: 700px){
+    .contBoton{
+        display: flex;
+        flex-direction: row;
+        margin-left: 110px;
+    }
+}
 
 
 

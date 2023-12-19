@@ -21,7 +21,7 @@ export default function Home() {
                   <img className={styles.imagen} src={image} alt={`Helem Salon Carousel Image ${index}`} />
                 </div>
                 <div className={styles.contTexto}>
-                  <p>
+                  <p className={styles.parrafo}>
                     Dream of perfect hair and make it come tru in our beauty salon. Our hair
                     care specialists offer you the most innovative and efective treatments. Feel bueautiful
                     and confident with helthy and shiny hair.

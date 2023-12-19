@@ -11,3 +11,11 @@ table{
     border-color: white;
     color: white;
 }
+
+@media all and (max-width: 700px){
+    .bookOnlineDiv{
+        width:100% !important;
+        background-color: blue !important;
+    }
+    
+}

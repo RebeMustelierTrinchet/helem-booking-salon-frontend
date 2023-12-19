@@ -13,11 +13,12 @@
     list-style-type: none;
     margin-left: 5%;
     width:190px;
+    background-color: blue;
 }
-li {
+.botonDestino, li{
     padding: 0;
     margin: 0;
-    list-style: none;
+    background-color: transparent;
     -webkit-transition: all .2s;
     transition: all .2s;
     float: left;
@@ -25,6 +26,7 @@ li {
     grid-template-columns: auto auto auto;
     justify-items: start;
     cursor: pointer;
+    border-color: transparent;
 }
 
 
@@ -42,12 +44,12 @@ li {
     top: 20px;
 }
 
-.contenedorLista{
+.footerWrapperDiv{
     display: flex;
     flex-direction: column;
 }
 
-.contenedorLista :hover, .boton :hover{
+.contenedorLista :hover, .boton :hover, .botonDestino :hover{
     color: rgba(207, 151, 46, 0.944);
     cursor: pointer;
 }
@@ -112,7 +114,7 @@ li {
         margin-left: -50px;
     }
 
-    .conText, .contenedorTable, .contLista{
+    .conText, .contenedorTable, .contLista, .footerWrapperDiv{
         margin-top: 50px;
     }
 
@@ -125,13 +127,25 @@ li {
         text-align: start;
         margin: auto;
         width :100%;
+        margin-bottom: 10px;
     }
     .stiloTabla{
         display: none;  
         margin: auto;
     }
+    .botonDestino{
+        margin: auto;
+        margin-top: 5px;
+    }
+    .botonDestino :hover{
 
+        background-color: rgba(207, 151, 46, 0.944)
+        
+    }
     .footerWrapperDiv{
+        display: flex;
+        text-align: center;
         width: 100%;
+        margin-bottom: 20px;
     }
 }

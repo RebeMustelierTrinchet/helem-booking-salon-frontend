@@ -30,7 +30,7 @@ import { CgMail } from "react-icons/cg";
             <Nav.Link className={styles.botonNav} href="/bookOnline">Book Online</Nav.Link>
     
           </Nav>
-          <Nav>
+          <Nav className={styles.contBoton}>
             <Nav.Link className={styles.boton} href="https://www.facebook.com/profile.php?id=100082191186102"><FaFacebookF /></Nav.Link>
             <Nav.Link className={styles.boton} href="https://www.instagram.com/hellentrinchet/"><FaInstagram /></Nav.Link>
             <Nav.Link className={styles.boton} href="/"><FaTwitter /></Nav.Link>

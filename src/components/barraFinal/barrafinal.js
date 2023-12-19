@@ -44,17 +44,15 @@ export default function BarraFinal(){
     return(
         <div className={styles.contenedorPrincipal}>
            <div className={styles.footerWrapperDiv}>
-                <ul className={styles.contenedorLista}>
-                    <li className={styles.botonNav} Link to="/">Home</li>
-                    <li className={styles.botonNav} Link to="/faqs">Faqs</li>
-                    <li className={styles.botonNav} Link to="/gallery">Gallery</li>
-                    <li className={styles.botonNav} Link to="/pages">Contact Us</li>
-                    <li className={styles.botonNav} Link to="/bookOnline">Book Online</li>
-                </ul>
+                    <button className={styles.botonDestino}><Link to="/"> HOME </Link></button>
+                    <button className={styles.botonDestino}><Link to="/faqs"> FAQS </Link></button>
+                    <button className={styles.botonDestino}><Link to="/gallery"> GALLERY </Link></button>
+                    <button className={styles.botonDestino}><Link to="/contactus"> CONTACT US </Link></button>
+                    <button className={styles.botonDestino}><Link to="/bookOnline"> BOOK ONLINE </Link></button>
            </div>
            
             <div  className={styles.contText}>
-                <h1 className={styles.text}>7500 Bellaire Boulevard, Houston Tx</h1>
+                <h1 className={styles.text}>9313 Tallyho rd apt 401, Houston Tx 77017</h1>
                 <div>
                     <ul className={styles.contLista}>
                         <li className={styles.boton} Link to="https://www.facebook.com/profile.php?id=100082191186102"><FaFacebookF /></li>
