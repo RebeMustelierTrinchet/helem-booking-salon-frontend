@@ -44,10 +44,10 @@ export default function BarraFinal(){
     return(
         <div className={styles.contenedorPrincipal}>
            <div className={styles.footerWrapperDiv}>
-                    <button className={styles.botonDestino}><Link to="/"> HOME </Link></button>
+                   <button className={styles.botonDestino}><Link to="/">HOME</Link></button>
                     <button className={styles.botonDestino}><Link to="/faqs"> FAQS </Link></button>
                     <button className={styles.botonDestino}><Link to="/gallery"> GALLERY </Link></button>
-                    <button className={styles.botonDestino}><Link to="/contactus"> CONTACT US </Link></button>
+                    <button className={styles.botonDestino}><Link to="/contact-us"> CONTACT US </Link></button>
                     <button className={styles.botonDestino}><Link to="/bookOnline"> BOOK ONLINE </Link></button>
            </div>
            
@@ -63,8 +63,8 @@ export default function BarraFinal(){
                 </div>
             </div>
             <div className={styles.contenedorImagen}>
-                <img className={styles.imagen} src={Capture1}></img>
-                <img className={styles.imagen1} src={Capture}></img>
+                <img className={styles.imagen} src={Capture1} alt="Helem Salon logo part 1" />
+                <img className={styles.imagen1} src={Capture} alt="Helem Salon logo part 2" />
             </div>
             <div className={styles.contenedorTable}>
                 <table className={styles.stiloTabla}>

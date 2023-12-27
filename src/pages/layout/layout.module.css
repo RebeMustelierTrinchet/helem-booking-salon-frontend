@@ -37,13 +37,11 @@ a {
     text-decoration: none;
     color: white;
     opacity:0.80;
-
 }
 
 a:hover{
     opacity: 1;
 }
-
 
 .boton{
     position: relative;

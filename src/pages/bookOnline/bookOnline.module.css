@@ -15,7 +15,13 @@ table{
 @media all and (max-width: 700px){
     .bookOnlineDiv{
         width:100% !important;
-        background-color: blue !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .table, .bookOnlineDivWrapper{
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }

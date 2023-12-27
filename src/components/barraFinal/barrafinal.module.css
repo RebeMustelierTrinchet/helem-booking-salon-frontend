@@ -13,7 +13,6 @@
     list-style-type: none;
     margin-left: 5%;
     width:190px;
-    background-color: blue;
 }
 .botonDestino, li{
     padding: 0;
@@ -88,12 +87,15 @@
         text-align: start;
         margin: auto;
         height: max-content;
+        width: 100%;
     }
     
     .contenedorImagen{
         width: 100%;
         margin-left:0px;
         display: flex;
+        margin-top: 10px;
+        margin-bottom: 50px;
     }
     
     .imagen{
@@ -135,17 +137,29 @@
     }
     .botonDestino{
         margin: auto;
-        margin-top: 5px;
+        margin-top: 10px;
     }
-    .botonDestino :hover{
-
+    .botonDestino:hover{
         background-color: rgba(207, 151, 46, 0.944)
-        
     }
     .footerWrapperDiv{
         display: flex;
         text-align: center;
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .contenedorTable{
+        display: none;
+    }
+
+    .contText, .contLista, .contenedorImagen{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .text{
+        text-align: justify;
     }
 }

@@ -21,7 +21,7 @@ render(
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/faqs" element={<Faqs />} />
-        <Route exact path="/pages" element={<Pages />} />
+        <Route exact path="/contact-us" element={<Pages />} />
         <Route exact path="/bookOnline" element={<BookOnline />} />
         <Route exact path="/gallery" element={<Gallery />} />
         <Route exact path="/emails" element={<ContactUs />} />

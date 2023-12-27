@@ -14,3 +14,16 @@
 button {
     margin: 3px;
 }
+
+@media all and (max-width: 700px){
+    .contenedorPrincipal{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    .contAccordion{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+}

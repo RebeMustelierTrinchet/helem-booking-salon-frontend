@@ -40,8 +40,8 @@ const SCHEDULE = [
 export default function BookOnline(){
     return(
         <div className={styles.bookOnlineDiv}>
-            <div>
-                <table>
+            <div className={styles.bookOnlineDivWrapper}>
+                <table className={styles.table}>
                     {SCHEDULE.map((item, index) => {
                         return(
                             <tr key={index}>

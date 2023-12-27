@@ -18,7 +18,7 @@ export default function Home() {
             <Carousel.Item key={index} className={styles.carouselItem}>
               <div className={styles.carouselItemDiv}>
                 <div className={styles.imageDiv}>
-                  <img className={styles.imagen} src={image} alt={`Helem Salon Carousel Image ${index}`} />
+                  <img className={styles.imagen} src={image} alt={`Helem Salon Carousel ${index}`} />
                 </div>
                 <div className={styles.contTexto}>
                   <p className={styles.parrafo}>
@@ -26,7 +26,7 @@ export default function Home() {
                     care specialists offer you the most innovative and efective treatments. Feel bueautiful
                     and confident with helthy and shiny hair.
                   </p>
-                  <button className={styles.schedule_button}><Link to="/bookOnline"> Book Online</Link></button>
+                  <div className={styles.schedule_button_div}><button className={styles.schedule_button}><Link to="/bookOnline"> Book Online</Link></button></div>
                 </div>
               </div>
             </Carousel.Item>
