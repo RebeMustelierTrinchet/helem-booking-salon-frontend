@@ -25,7 +25,7 @@ export default function Pges(){
             <img className={styles.imagen} src={I2}></img>
             <div className={styles.contenedorInformacion}>
                 <hr className={styles.linea}></hr>
-                <h1 className={styles.text}>9313 Tallyho rd apt 401, Houston Tx 77017</h1>
+                <h1 className={styles.text}>9313 Tallyho rd apt 401, Houston TX 77017</h1>
             
             </div>
             </div>

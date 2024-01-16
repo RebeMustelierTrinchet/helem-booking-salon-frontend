@@ -23,7 +23,7 @@ const IMAGES = [S1, S2, S3, S4, Capture1,Capture2, Capture3, R2, I1, I2, I3]
 
 export default function Gallery(){
     return(
-        <div className={styles.contenedorPrincipal}>
+        <div className={styles.contenedorPrincipal} >
       <div className={styles.contenedorCarrusel}>
         <Carousel className={styles.carousel}>
           {IMAGES.map((image, index) => {

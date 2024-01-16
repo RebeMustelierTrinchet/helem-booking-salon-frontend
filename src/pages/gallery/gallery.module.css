@@ -1,26 +1,32 @@
 .contenedorImagen{
     margin-top: 5%;
+    /* background-color: beige; */
 }
 
-
+/* bien */
 .contenedorPrincipal{
     width: 60%;
     height: 100%;
     display: flex;
+    /* background-color: aquamarine; */
  
     margin:auto;
     flex-direction: column;
     text-align: center;
 }
 
+/* bien */
 .contenedorCarrusel{
     margin-top: 40px;
     margin-bottom: 45px;
     height: 100%;
+    /* width: 100%; */
     background-size: cover;
     background-color: rgba(56, 56, 56, 0.658);
     text-align: center;
 }
+
+/* bien */
 .carousel{
     background-color:rgba(129, 129, 129, 0.616)56, 56, 56, 0.658) ;
     width: 95%;
@@ -31,11 +37,12 @@
 }
 
 .carouselItem{
-    width: 100%;
+    width: 100px;
     height: 650px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+    /* background-color: aqua; */
 }
 
 .carouselItemDiv{
@@ -44,6 +51,7 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    /* background-color: azure; */
 }
 
 .imageDiv{
@@ -52,6 +60,7 @@
     z-index: 100;
     display: flex;
    margin: auto;
+   /* background-color: bisque; */
 }
 
 
@@ -59,6 +68,9 @@
     height: 95%;
     display: flex;
     margin: auto;
+}
+.comentariosDiv{
+    /* background-color: aqua; */
 }
 
 @media all and (max-width: 700px){

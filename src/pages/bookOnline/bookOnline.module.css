@@ -12,6 +12,88 @@ table{
     color: white;
 }
 
+.bookOnlineDiv{
+    margin-bottom: 100px;
+}
+
+.bookOnlineDivWrapper{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forms{
+    width: 750px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-color: black;
+}
+
+.formsLabel{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+}
+
+.formsDiv{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 750px;
+    justify-content: space-between;
+}
+
+.formsTimeDiv{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.formsItem{
+    width: 200px;
+    height: 40px;
+    border-width: 2px;
+    border-color: black;
+}
+
+.formsSubDiv{
+    height: 40px;
+}
+
+.formsItem1{
+    width: 80%;
+    height: 40px;
+    margin-left: 0 ;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+
+}
+
+.alerta{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(238, 248, 208, 0.977);
+}
+
+.alertText{
+    font-size: 17px;
+}
+
+.button{
+    width: 150px;
+}
+
+.title{
+    margin-top: 50px;
+    color: white;
+}
+
 @media all and (max-width: 700px){
     .bookOnlineDiv{
         width:100% !important;
@@ -23,5 +105,23 @@ table{
         margin-left: auto;
         margin-right: auto;
     }
+
+    .bookOnlineDivWrapper, .forms, .formsDiv{
+        width: 350px;
+    }
     
+    .formsDiv{
+        flex-direction: column !important;
+    }
+    .formsItem1{
+        margin-left: 0;
+    }
+
+    .formsSubDiv{
+        margin-bottom: 20px;
+    }
+    .formsText1{
+        margin-left: -130px;
+    }
+
 }

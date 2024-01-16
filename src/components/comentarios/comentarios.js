@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import styles from "./comentarios.module.css"
 import { FaStar } from "react-icons/fa";
+import { getComments } from "../../api/comments-api"
+
+
+
 
 const Perfiles = [
   {
@@ -43,38 +47,58 @@ const Perfiles = [
 ];
 
 function Comentarios() {
+
+  const [comments, setComments] = useState([]);
+
+  useEffect(() => {
+    async function getAllComments() {
+      await getComments(setComments);
+    }
+
+    getAllComments();
+  }, [])
+
   return (
     <div>
-      {Perfiles.map((perfil, index) => {
-        return (
-          <Card key={index} className={styles.divPrincipal}>
-            <Card.Header className={styles.cardHeader}>
-                <div className={styles.cardHeaderDiv}>
-                    <div className={styles.photoDiv}>{perfil.foto??""}</div>
-                    <div>{perfil.nombre ?? ""}</div>
+      {comments && comments.length ?
+        <div>
+          {comments.map((perfil, index) => {
+            return (
+              <Card key={index} className={styles.divPrincipal}>
+                <Card.Header className={styles.cardHeader}>
+                  <div className={styles.cardHeaderDiv}>
+                    <div className={styles.photoDiv}>{perfil.foto ?? ""}</div>
+                    <div>{perfil.author ?? ""}</div>
                     <div className={styles.starsDiv}>{
-                         Array(perfil.estrellas??5)
-                         .fill()
-                         .map((_, i) => {
-                           return (
-                             <div>
-                               <FaStar
-                                 color={"#ffc107"}
-                                 size={25}
-                               />
-                             </div>
-                           );
-                         })
-                         }</div>
-                </div>
-            </Card.Header>
+                      Array(5)
+                        .fill()
+                        .map((_, i) => {
+                          return (
+                            <div>
+                              <FaStar
+                                color={"#ffc107"}
+                                size={25}
+                              />
+                            </div>
+                          );
+                        })
+                    }</div>
+                  </div>
+                </Card.Header>
 
-            <Card.Body><div className={styles.commentsDiv}>{perfil.comentario ?? ""}</div></Card.Body>
-          </Card>
-        );
-      })}
+                <Card.Body>
+
+                  <Card.Title style={{textAlign: "start"}}>{perfil.title ?? ""}</Card.Title>
+                  <div className={styles.commentsDiv}>{perfil.message ?? ""}</div></Card.Body>
+              </Card>
+            );
+          })}
+
+        </div>
+        : <div>No Hay Nada</div>
+      }
     </div>
-  );
+  )
 }
 
 export default Comentarios;

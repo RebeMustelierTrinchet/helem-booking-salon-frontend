@@ -52,7 +52,7 @@ export default function BarraFinal(){
            </div>
            
             <div  className={styles.contText}>
-                <h1 className={styles.text}>9313 Tallyho rd apt 401, Houston Tx 77017</h1>
+                <h1 className={styles.text}>9313 Tallyho rd apt 401, Houston TX 77017</h1>
                 <div>
                     <ul className={styles.contLista}>
                         <li className={styles.boton} Link to="https://www.facebook.com/profile.php?id=100082191186102"><FaFacebookF /></li>
