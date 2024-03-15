@@ -55,6 +55,13 @@ a:hover{
     border-radius: 60% 60% 60% 60%;
     text-align: center;
 }
-body{
+
+.body{
     background-color: rgba(42, 42, 42, 0.51);
+    margin-top: 50px;
+}
+
+.layout{
+    height: max-content;
+    
 }

@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import Capture1 from "./imagenes/Capture1.PNG";
 import Capture from "./imagenes/Capture.PNG";
 import styles from "./layout.module.css";
@@ -10,16 +10,19 @@ import NavBar from '../../components/navbar/navbar';
 
 import BarraFinal from '../../components/barraFinal/barrafinal';
 
-export default function Layout({children}){
-    return(
-        <div>
-            <NavBar/>
+export default function Layout({ children }) {
+    return (
+        <div className={styles.layout}>
+            <div>
+                <NavBar />
 
-        <div className={styles.body}>
-            {children}
-        </div>
-        
-        <BarraFinal />
+                <div className={styles.body}>
+                    {children}
+                </div>
+                <div className={styles.footer}>
+                    <BarraFinal />
+                </div>
+            </div>
         </div>
     )
 }
