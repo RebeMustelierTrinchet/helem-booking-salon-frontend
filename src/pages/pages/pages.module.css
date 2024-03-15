@@ -2,13 +2,15 @@
     display:flex;
     width: 90%;
     justify-content: space-between;
+    /* background-color: aqua; */
+    margin: auto;
 }
 
 .imagen{
     width: 400px;
     height: 350px;
     display: flex;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-top: 30px;
 }
 
@@ -28,6 +30,7 @@
 }
 .text{
     font-size:16px;
+    color: white;
 }
 @media all and (max-width: 700px){
 
