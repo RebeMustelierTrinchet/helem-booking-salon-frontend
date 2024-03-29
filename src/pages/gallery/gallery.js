@@ -16,32 +16,29 @@ import I6 from "./imagenes/I6.jpg"
 
 const IMAGES = [I1, I2, I3, I4, I5, I6]
 
-export default function Gallery(){
-    return(
-        <div className={styles.main__container} >
+export default function Gallery() {
+  return (
+
+    <div className={styles.main__container} >
       <div className={styles.carousel__container}>
         <Carousel variant="dark" className={styles.carousel}>
           {IMAGES.map((image, index) => {
-            return(
+            return (
               <Carousel.Item interval={9000} key={index} className={styles.carousel__Item}>
-              <div className={styles.carousel__Item__Div}>
-                <div className={styles.image__container}>
-                  <img className={styles.image} src={image} />
+                <div className={styles.carousel__Item__Div}>
+                  <div className={styles.image__container}>
+                    <img className={styles.image} src={image} />
+                  </div>
                 </div>
-              </div>
-            </Carousel.Item>
+              </Carousel.Item>
             );
           })}
         </Carousel>
       </div>
 
       <div className={styles.comments__container}>
-
-          <Comments />
-
+        <Comments />
       </div>
-        
-      
     </div>
-    )
+  )
 }

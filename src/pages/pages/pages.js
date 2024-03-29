@@ -4,7 +4,6 @@ import Layout from "../layout/layout";
 import Carousel from 'react-bootstrap/Carousel';
 import I1 from "./images/I1.jpg"
 import I2 from "./images/I2.png"
-import Mapa from './mapa'
 
 export default function Pges(){
     return(
