@@ -1,4 +1,4 @@
-.contenedorPrincipal{
+.main__container{
     width: 100%;
     height: 100%;
     display: flex;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.contenedorCarrusel{
+.carousel__container{
     height: 100%;
     background-size: cover;
     background-color: black;
@@ -23,20 +23,20 @@
     text-align: center;
 }
 
-.carouselItem{
+.carousel__Item{
     width: 100%;
     height: 650px;
     margin-bottom: 25px;
     margin-top: 25px;
 }
 
-.carouselItemDiv{
+.carousel__Item__Div{
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.imageDiv{
+.image__Div{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,7 +46,7 @@
 }
 
 
-.imagen{
+.image{
     width: 100%;
     height: 100%;
     margin-top: 0;
@@ -54,7 +54,7 @@
     object-fit: cover;
 }
 
-.contTexto{
+.text__container{
     background-color: rgba(90, 90, 90, 0.664);
     font-size: 18px;
     color: white;
@@ -67,7 +67,7 @@
     border-radius: 5%/ 21%;
 }
 
-.parrafo{
+.text__container__paragraph{
     width: 750px;
     margin: auto; 
     margin-top: 10px;
@@ -84,25 +84,28 @@
 }
 
 @media all and (max-width: 700px){
-    .contenedorPrincipal{
+    .main__container{
         width:100%;
+        
     }
-    .contenedorCarrusel{
+    .carousel__container{
         width: 100%;
         align-items: start !important;
     }
     .carousel{
-        height: 550px;
+        height: 600px;
         align-items: start !important;
+        
     }
     
-    .contTexto{
+    .text__container{
         background-color: transparent;
         font-size: 18px;
         color: white;
         width: 400px;
-        margin-top: 200px !important;
+        margin-top: 210px !important;
         z-index: 100;
+        height: 200px;
         border-radius: 5%/ 21%;
         position: relative !important;
         text-align: justify;
@@ -114,24 +117,24 @@
         margin-right: auto;
     }
 
-    .carouselItemDiv{
+    .carousel__Item__Div{
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 500px;
         align-self: flex-start;
         top: 0;
         left: 0;
     }
     
-    .carouselItem{
-        height: 450px;
+    .carousel__Item{
+        height: 500px;
     }
-    .parrafo{
+    .text__container__paragraph{
         width: 90%;
         font-size: 15px;
     }
 
-    .imageDiv{
+    .image__Div{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -140,7 +143,7 @@
         z-index: 100;
     }
     
-    .imagen{
+    .image{
         width: 100%;
         height: 350px;
         margin-top: 0;

@@ -11,17 +11,17 @@ const IMAGES = [Rebeca, Capture, IMG]
 
 export default function Home() {
   return (
-    <div className={styles.contenedorPrincipal}>
-      <div className={styles.contenedorCarrusel}>
+    <div className={styles.main__container}>
+      <div className={styles.carousel__container}>
         <Carousel className={styles.carousel}>
           {IMAGES.map((image, index) => (
-            <Carousel.Item key={index} className={styles.carouselItem}>
-              <div className={styles.carouselItemDiv}>
-                <div className={styles.imageDiv}>
-                  <img className={styles.imagen} src={image} alt={`Helem Salon Carousel ${index}`} />
+            <Carousel.Item key={index} className={styles.carousel__Item}>
+              <div className={styles.carousel__Item__Div}>
+                <div className={styles.image__Div}>
+                  <img className={styles.image} src={image} alt={`Helem Salon Carousel ${index}`} />
                 </div>
-                <div className={styles.contTexto}>
-                  <p className={styles.parrafo}>
+                <div className={styles.text__container}>
+                  <p className={styles.text__container__paragraph}>
                     Dream of perfect hair and make it come tru in our beauty salon. Our hair
                     care specialists offer you the most innovative and efective treatments. Feel bueautiful
                     and confident with helthy and shiny hair.

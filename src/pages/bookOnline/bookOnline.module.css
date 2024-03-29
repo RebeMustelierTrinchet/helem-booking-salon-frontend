@@ -12,11 +12,11 @@ table{
     color: white;
 }
 
-.bookOnlineDiv{
+.book__Online__Div{
     margin-bottom: 100px;
 }
 
-.bookOnlineDivWrapper{
+.book__Online__Div__Wrapper{
     width: 750px;
     margin-left: auto;
     margin-right: auto;
@@ -31,14 +31,14 @@ table{
     border-color: black;
 }
 
-.formsLabel{
+.forms__Label{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: start;
 }
 
-.formsDiv{
+.forms__Div{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -46,24 +46,24 @@ table{
     justify-content: space-between;
 }
 
-.formsTimeDiv{
+.forms__Time__Div{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
 }
 
-.formsItem{
+.forms__Item{
     width: 200px;
     height: 40px;
     border-width: 2px;
     border-color: black;
 }
 
-.formsSubDiv{
+.forms__Sub__Div{
     height: 40px;
 }
 
-.formsItem1{
+.forms__Item1{
     width: 80%;
     height: 40px;
     margin-left: 0 ;
@@ -73,7 +73,7 @@ table{
 
 }
 
-.alerta{
+.alert{
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -95,32 +95,32 @@ table{
 }
 
 @media all and (max-width: 700px){
-    .bookOnlineDiv{
+    .book__Online__Div{
         width:100% !important;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .table, .bookOnlineDivWrapper{
+    .table, .book__Online__Div__Wrapper{
         margin-left: auto;
         margin-right: auto;
     }
 
-    .bookOnlineDivWrapper, .forms, .formsDiv{
+    .book__Online__Div__Wrapper, .forms, .forms__Div{
         width: 350px;
     }
     
-    .formsDiv{
+    .forms__Div{
         flex-direction: column !important;
     }
-    .formsItem1{
+    .forms__Item1{
         margin-left: 0;
     }
 
-    .formsSubDiv{
+    .forms__Sub__Div{
         margin-bottom: 20px;
     }
-    .formsText1{
+    .forms__Text1{
         margin-left: -130px;
     }
 

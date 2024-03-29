@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import ContactUs from './email';
 import NavBar from '../../components/navbar/navbar';
 
-import BarraFinal from '../../components/barraFinal/barrafinal';
+import Footer from '../../components/footer/footer';
 
 export default function Layout({ children }) {
     return (
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
                     {children}
                 </div>
                 <div className={styles.footer}>
-                    <BarraFinal />
+                    <Footer />
                 </div>
             </div>
         </div>

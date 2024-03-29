@@ -1,4 +1,4 @@
-.contenedorPrincipal{
+.main__container{
     display:flex;
     width: 90%;
     justify-content: space-between;
@@ -6,7 +6,7 @@
     margin: auto;
 }
 
-.imagen{
+.image{
     width: 400px;
     height: 350px;
     display: flex;
@@ -14,12 +14,12 @@
     margin-top: 30px;
 }
 
-.imagContenedor{
+.image__container{
     width: 1000px;
     justify-content: space-between;
 }
 
-.contenedorInformacion{
+.information__container{
     color:rgba(0, 0, 0, 0.631);
     margin-top: 1%;
     margin-left: 3%;
@@ -34,7 +34,7 @@
 }
 @media all and (max-width: 700px){
 
-    .contenedorPrincipal{
+    .main__container{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -42,14 +42,14 @@
         margin-right: auto;
     }
 
-    .imagContenedor{
+    .image__container{
         margin-left: auto;
         margin-right: auto;
         width: 100%;
         text-align: center;
     }
 
-    .contenedorInformacion, .imagen{
+    .information__container, .image{
         margin-left: auto;
         margin-right: auto;
     }

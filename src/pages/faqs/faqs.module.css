@@ -1,4 +1,4 @@
-.contenedorPrincipal{
+.main__container{
     margin-top:5px;
     margin-bottom: 5px;
     display:flex;
@@ -7,7 +7,7 @@
     height: 100% !important;
 }
 
-.contAccordion{
+.Accordion__container{
     width: 1200px;
 }
 
@@ -16,12 +16,12 @@ button {
 }
 
 @media all and (max-width: 700px){
-    .contenedorPrincipal{
+    .main__container{
         width: 100%;
         margin-left: auto;
         margin-right: auto;   
     }
-    .contAccordion{
+    .Accordion__container{
         width: 95%;
         margin-left: auto;
         margin-right: auto;    

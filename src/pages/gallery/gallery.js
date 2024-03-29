@@ -3,7 +3,7 @@ import styles from "./gallery.module.css"
 import Layout from "../layout/layout";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Comentarios from "../../components/comentarios/comentarios";
+import Comments from "../../components/comments/comments";
 
 import I1 from "./imagenes/I1.jpg"
 import I2 from "./imagenes/I2.jpg"
@@ -18,15 +18,15 @@ const IMAGES = [I1, I2, I3, I4, I5, I6]
 
 export default function Gallery(){
     return(
-        <div className={styles.contenedorPrincipal} >
-      <div className={styles.contenedorCarrusel}>
+        <div className={styles.main__container} >
+      <div className={styles.carousel__container}>
         <Carousel variant="dark" className={styles.carousel}>
           {IMAGES.map((image, index) => {
             return(
-              <Carousel.Item interval={9000} key={index} className={styles.carouselItem}>
-              <div className={styles.carouselItemDiv}>
-                <div className={styles.imageDiv}>
-                  <img className={styles.imagen} src={image} />
+              <Carousel.Item interval={9000} key={index} className={styles.carousel__Item}>
+              <div className={styles.carousel__Item__Div}>
+                <div className={styles.image__container}>
+                  <img className={styles.image} src={image} />
                 </div>
               </div>
             </Carousel.Item>
@@ -35,9 +35,9 @@ export default function Gallery(){
         </Carousel>
       </div>
 
-      <div className={styles.comentariosDiv}>
+      <div className={styles.comments__container}>
 
-          <Comentarios />
+          <Comments />
 
       </div>
         

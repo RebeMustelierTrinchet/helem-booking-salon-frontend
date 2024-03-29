@@ -1,4 +1,4 @@
-.contenedorPrincipal{
+.main__container{
     width: 100%;
     height: 200px;
     padding: 0 3em;
@@ -16,7 +16,7 @@
     margin-left: 5%;
     width:190px;
 }
-.botonDestino, li{
+.btn__displacement, li{
     padding: 0;
     margin: 0;
     background-color: transparent;
@@ -31,26 +31,26 @@
 }
 
 
-.contenedorImagen{
+.Image__container{
     margin-left:200px;
     display: flex;
 }
 
-.imagen{
+.image{
     height: 80px
 }
-.imagen1{
+.image1{
     height: 40px;
     position: relative;
     top: 20px;
 }
 
-.footerWrapperDiv{
+.footer__Wrapper__Div{
     display: flex;
     flex-direction: column;
 }
 
-.contenedorLista :hover, .boton :hover, .botonDestino :hover{
+.List__container :hover, .boton :hover, .botonDestino :hover{
     color: rgba(207, 151, 46, 0.944);
     cursor: pointer;
 }
@@ -63,7 +63,7 @@
     font-size: 15px;
 }
 
-.boton{
+.btn__social__media{
     margin-left: 5px;
     border-radius: 50%;
     text-align: center ;
@@ -71,19 +71,19 @@
     height: 40px;
 }
 
-.contenedorTable{
+.table__container{
     height: 180px;
     width: 400px;
     margin-top: 0px;
     margin-left: 100px;
 }
 
-.stiloTabla{
+.Table{
     margin-top: 0px;  
 }
 
 @media all and (max-width: 700px){
-    .contenedorPrincipal{
+    .main__container{
         display: flex;
         flex-direction: column;
         text-align: start;
@@ -92,7 +92,7 @@
         width: 100%;
     }
     
-    .contenedorImagen{
+    .Image__container{
         width: 100%;
         margin-left:0px;
         display: flex;
@@ -100,29 +100,29 @@
         margin-bottom: 50px;
     }
     
-    .imagen{
+    .image{
         height: 80px
     }
-    .imagen1{
+    .image1{
         height: 30px;
         position: relative;
         
     }
-    .contLista{
+    .List__container{
         display: flex;
         flex-direction: row;
         margin: auto;
     }
-    .contenedorLista, .contText{
+    .List__container, .contText{
         width: 100%;
         margin-left: -50px;
     }
 
-    .conText, .contenedorTable, .contLista, .footerWrapperDiv{
+    .conText, .table__container, .List__container, .footer__Wrapper__Div{
         margin-top: 50px;
     }
 
-    .contenedorLista{
+    .List__container{
         width: 100%;
     }
 
@@ -133,29 +133,29 @@
         width :100%;
         margin-bottom: 10px;
     }
-    .stiloTabla{
+    .Table{
         display: none;  
         margin: auto;
     }
-    .botonDestino{
+    .btn__displacement{
         margin: auto;
         margin-top: 10px;
     }
-    .botonDestino:hover{
+    .btn__displacement:hover{
         background-color: rgba(207, 151, 46, 0.944)
     }
-    .footerWrapperDiv{
+    .footer__Wrapper__Div{
         display: flex;
         text-align: center;
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .contenedorTable{
+    .table__container{
         display: none;
     }
 
-    .contText, .contLista, .contenedorImagen{
+    .contText, .List__container, .Image__container{
         margin-left: auto;
         margin-right: auto;
         justify-content: center;

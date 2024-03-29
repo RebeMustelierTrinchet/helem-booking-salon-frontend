@@ -1,20 +1,20 @@
-.cardHeaderDiv{
+.card__Header__Div{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
 }
 
-.divPrincipal{
+.card{
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.starsDiv{
+.card__starts{
     display: flex;
     flex-direction: row;
 }
 
-.cardHeader{
+.card_Header{
     background-color: white;
 }
 

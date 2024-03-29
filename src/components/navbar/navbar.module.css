@@ -1,30 +1,30 @@
-.imagen{
+.image{
     height: 50px
 }
-.imagen1{
+.image1{
     height: 15px;
     position: relative;
 }
 
-.contenedorPrincipal{
+.main__container{
 
     background-color: black;
     color: white;   
 }
 
-.boton{
+.btn__social__media{
     border-radius: 50%;
     text-align: center ;
     width: 40px;
     height: 40px;
 }
 
-.botonNav:hover, .boton:hover{
+.btn__displacement:hover, .btn__social__media:hover{
     background-color: rgba(207, 151, 46, 0.944);
 }
 
 @media all and (max-width: 700px){
-    .contBoton{
+    .btn__social__media__container{
         display: flex;
         flex-direction: row;
         margin-left: 110px;

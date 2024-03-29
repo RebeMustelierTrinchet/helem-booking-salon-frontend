@@ -5,7 +5,7 @@
 } */
 
 /* bien */
-.contenedorPrincipal{
+.main__container{
     width: 100%;
     height: 100%;
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 /* bien */
-.contenedorCarrusel{
+.carousel__container{
     margin-top: 40px;
     margin-bottom: 45px;
     height: 100%;
@@ -44,7 +44,7 @@
     transition-duration: 1s;
 }
 
-.carouselItem{
+.carousel__Item{
     width: 100%;
     /* background-color: aqua; */
     height: 700px;
@@ -58,7 +58,7 @@
     
 }
 
-.carouselItemDiv{
+.carousel__Item__Div{
     position: relative;
     width: 100%;
     height: 100%;
@@ -69,7 +69,7 @@
     background-color: #525252;
 }
 
-.imageDiv{
+.image__container{
     position: absolute;
     overflow: hidden;
     width: 100%;
@@ -80,7 +80,7 @@
 }
 
 
-.imagen{
+.image{
     width: 100%;
     height: 100%;
     margin-top: 0;
@@ -102,18 +102,18 @@
       }
     
   }
-.comentariosDiv{
+  .comments__container{
     /* background-color: aqua; */
 }
 
 @media all and (max-width: 700px){
-    .contenedorPrincipal{
+    .main__container{
         width:100%;
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
     }
-    .contenedorCarrusel{
+    .carousel__container{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -125,7 +125,7 @@
         margin-right: auto;
     }
     
-    .imagen{
+    .image{
         margin: 10px;
         width: 300px;
         height: 320px;
@@ -134,7 +134,7 @@
 
     }
 
-    .comentariosDiv{
+    .comments__container{
         width: 95%;
         margin-left: auto;
         margin-right: auto;

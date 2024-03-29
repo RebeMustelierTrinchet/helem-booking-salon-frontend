@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./bookOnline.module.css"
 import Layout from "../layout/layout";
-import BarraFinal from "../../components/barraFinal/barrafinal";
 import { useEffect, useState } from "react";
 import { Form, Alert, Button } from "react-bootstrap"
 import DatePicker from "react-datepicker";
@@ -77,18 +76,18 @@ export default function BookOnline() {
     }, [apiResult])
 
     return (
-        <div className={styles.bookOnlineDiv}>
-            <div className={styles.bookOnlineDivWrapper}>
+        <div className={styles.book__Online__Div}>
+            <div className={styles.book__Online__Div__Wrapper}>
 
                 {showAlert ?
-                    <Alert variant="success" onClose={() => setShowAlert(false)} dismissible className={styles.alerta}>
+                    <Alert variant="success" onClose={() => setShowAlert(false)} dismissible className={styles.alert}>
                         <h1 className={styles.alertText}> Your appointment has been sent for approval </h1>
                     </Alert> : <></>
                 }
 
                 <h1 className={styles.title}>Booking</h1>
 
-                <Form.Label htmlFor="inputCustumer" className={styles.formsLabel}>Name</Form.Label>
+                <Form.Label htmlFor="inputCustumer" className={styles.forms__Label}>Name</Form.Label>
                 <Form.Control className={styles.forms}
                     type="text"
                     id="inputCustumer"
@@ -97,7 +96,7 @@ export default function BookOnline() {
                     onChange={(e) => { setCustomer(e.target.value) }}
                 />
 
-                <Form.Label htmlFor="inputPhone" className={styles.formsLabel}>Phone</Form.Label>
+                <Form.Label htmlFor="inputPhone" className={styles.forms__Label}>Phone</Form.Label>
                 <Form.Control
                     className={styles.forms}
                     type="text"
@@ -107,7 +106,7 @@ export default function BookOnline() {
                     onChange={(e) => { setPhone(e.target.value) }}
                 />
 
-                <Form.Label htmlFor="inputService" className={styles.formsLabel}>Service</Form.Label>
+                <Form.Label htmlFor="inputService" className={styles.forms__Label}>Service</Form.Label>
                 <Form.Select value={service} onChange={(e) => setService(e.target.value)}
                     className={styles.forms}
                     id="inputService" aria-label="Default select example">
@@ -120,15 +119,15 @@ export default function BookOnline() {
                     })}
                 </Form.Select>
 
-                <div className={styles.formsDiv}>
+                <div className={styles.forms__Div}>
 
-                    <div className={styles.formsSubDiv}>
-                        <Form.Label htmlFor="inputDate" className={styles.formsText1} >Date</Form.Label>
-                        <DatePicker id="inputDate" selected={date} onChange={(newDate) => setDate(newDate)} className={styles.formsItem1} />
+                    <div className={styles.forms__Sub__Div}>
+                        <Form.Label htmlFor="inputDate" className={styles.forms__Text1} >Date</Form.Label>
+                        <DatePicker id="inputDate" selected={date} onChange={(newDate) => setDate(newDate)} className={styles.forms__Item1} />
                     </div>
 
-                    <div className={styles.formsTimeDiv}>
-                        <Form.Label htmlFor="inputTime" className={styles.formsText} >Time</Form.Label>
+                    <div className={styles.forms__Time__Div}>
+                        <Form.Label htmlFor="inputTime" className={styles.forms__Text} >Time</Form.Label>
                         <Form.Select value={time} onChange={(e) => setTime(e.target.value)}
                             className={styles.formsItem}
                             id="inputTime" aria-label="Default select example">

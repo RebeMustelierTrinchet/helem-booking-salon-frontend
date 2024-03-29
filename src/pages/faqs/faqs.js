@@ -49,12 +49,12 @@ const ITEMS = [
 
 export default function Faqs() {
   return (
-    <div className={styles.contenedorPrincipal}>
-      <Accordion defaultActiveKey="1" className={styles.contAccordion}>
+    <div className={styles.main__container}>
+      <Accordion defaultActiveKey="1" className={styles.Accordion__container}>
         {ITEMS.map((item, itemIndex) => {
           return (
-            <Accordion.Item className={styles.accordionItem} eventKey={(itemIndex+1).toString()}>
-              <Accordion.Header className={styles.accordionItemHeader}>{item.title ?? ""}</Accordion.Header>
+            <Accordion.Item className={styles.accordion__Item} eventKey={(itemIndex+1).toString()}>
+              <Accordion.Header className={styles.accordion__Item__Header}>{item.title ?? ""}</Accordion.Header>
               <Accordion.Body>
                 {item.body ?? ""}
               </Accordion.Body>
