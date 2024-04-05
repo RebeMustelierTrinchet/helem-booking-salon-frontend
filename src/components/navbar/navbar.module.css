@@ -6,10 +6,18 @@
     position: relative;
 }
 
+body{
+    /* background-color: aqua !important; */
+    /* display: flex; */
+    position: relative;
+}
+
 .main__container{
 
     background-color: black;
-    color: white;   
+    color: white; 
+    /* position: relative; */
+    margin-bottom: 0; 
 }
 
 .btn__social__media{
