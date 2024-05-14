@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+  
+  .accordion-button{
+    background-color: transparent !important;
+    color: white !important;
+    /* margin-top: 15px !important; */
+    opacity: 1 !important;
+  }
+
+  .accordion-item{
+    background-color: transparent !important;
+    color: white !important;
+    opacity: 1 !important;
+  }
+  
+  .accordion-button:focus{
+    /* background-color: blue !important; */
+    /* border: 2px solid green !important; */
+    box-shadow: none !important;
+    color: white !important;
+  }
+  
+  .accordion{
+    --bs-accordion-btn-active-icon: url('./images/signoMenos.png') !important;
+    --bs-accordion-btn-icon: url('./images/signoMas.png') !important;
+    
+  }
+  
+  

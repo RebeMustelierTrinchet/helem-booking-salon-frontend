@@ -2,11 +2,21 @@
     margin-top:5px;
     margin-bottom: 5px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100% !important;
 }
 
+.faq__header__conteiner{
+    width: 95%;
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    margin-bottom: 35px;
+}
 .Accordion__container{
     width: 1200px;
 }
@@ -14,7 +24,12 @@
 button {
     margin: 3px;
 }
-
+.accordion__Item{
+    border: 2px solid rgba(207, 151, 46, 0.944) !important;
+    opacity: 1 !important;
+    border-radius: 2px !important;
+    margin-bottom: 20px !important;
+}
 @media all and (max-width: 700px){
     .main__container{
         width: 100%;

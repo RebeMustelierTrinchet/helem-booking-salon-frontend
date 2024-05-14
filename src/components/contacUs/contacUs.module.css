@@ -1,9 +1,12 @@
 .main__container{
     display:flex;
-    width: 90%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     justify-content: space-between;
-    /* background-color: aqua; */
+    width: 80%;
     margin: auto;
+    padding: 50px;
 }
 
 .image{
@@ -15,15 +18,18 @@
 }
 
 .image__container{
-    width: 1000px;
-    justify-content: space-between;
+    width: 400px;
+    /* min-width: 300px; */
+    
+    /* background-color: aquamarine; */
+    /* margin-right: 100px; */
 }
 
 .information__container{
     color:rgba(0, 0, 0, 0.631);
     margin-top: 1%;
     margin-left: 3%;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
     border-color: black;
     width: 350px;
     
@@ -35,11 +41,13 @@
 @media all and (max-width: 700px){
 
     .main__container{
+        /* background-color: aqua; */
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 250px;
     }
 
     .image__container{

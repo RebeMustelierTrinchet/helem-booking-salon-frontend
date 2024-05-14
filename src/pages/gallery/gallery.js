@@ -17,6 +17,10 @@ import I6 from "./imagenes/I6.jpg"
 const IMAGES = [I1, I2, I3, I4, I5, I6]
 
 export default function Gallery() {
+
+ 
+   
+  
   return (
 
     <div className={styles.main__container} >
@@ -25,11 +29,28 @@ export default function Gallery() {
           {IMAGES.map((image, index) => {
             return (
               <Carousel.Item interval={9000} key={index} className={styles.carousel__Item}>
+
                 <div className={styles.carousel__Item__Div}>
                   <div className={styles.image__container}>
                     <img className={styles.image} src={image} />
+                    
                   </div>
+                  <table className={styles.table}>
+                    <tbody> 
+                        {Array.from({ length: 40 }).map((_, rowIndex) => (
+                          <tr key={rowIndex} className={styles.tr_container}> 
+                            {Array.from({ length: 30 }).map((_, colIndex) => (
+                              <td key={colIndex} className={styles.td_container}>
+                                <div className={styles.inner_container} style={{ animationDelay: `${Math.random() * 7}s` }}></div>
+                              </td>
+
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                 </div>
+                
               </Carousel.Item>
             );
           })}

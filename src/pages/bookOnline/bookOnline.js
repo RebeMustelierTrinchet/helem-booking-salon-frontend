@@ -85,7 +85,7 @@ export default function BookOnline() {
                     </Alert> : <></>
                 }
 
-                <h1 className={styles.title}>Booking</h1>
+                <h1 className={styles.title}>Booking Online</h1>
 
                 <Form.Label htmlFor="inputCustumer" className={styles.forms__Label}>Name</Form.Label>
                 <Form.Control className={styles.forms}
@@ -133,9 +133,9 @@ export default function BookOnline() {
                             id="inputTime" aria-label="Default select example">
                             {new Array(20).fill(0).map((item, index) => {
                                 return (
-                                    <option key={index} value={formatTimeToDisplay(index)}>
+                                    <option className={styles.form_Item} key={index} value={formatTimeToDisplay(index)}>
                                         {
-                                            formatTimeToDisplay(index)
+                                             formatTimeToDisplay(index)
                                         }
                                     </option>
                                 );

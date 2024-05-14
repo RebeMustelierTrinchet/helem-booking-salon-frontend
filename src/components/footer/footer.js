@@ -47,7 +47,7 @@ export default function Footer(){
                    <button className={styles.btn__displacement}><Link to="/">HOME</Link></button>
                     <button className={styles.btn__displacement}><Link to="/faqs"> FAQS </Link></button>
                     <button className={styles.btn__displacement}><Link to="/gallery"> GALLERY </Link></button>
-                    <button className={styles.btn__displacement}><Link to="/contact-us"> CONTACT US </Link></button>
+                    {/* <button className={styles.btn__displacement}><Link to="/contact-us"> CONTACT US </Link></button> */}
                     <button className={styles.btn__displacement}><Link to="/bookOnline"> BOOK ONLINE </Link></button>
            </div>
            

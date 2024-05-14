@@ -1,4 +1,4 @@
-td {
+/* td {
     padding: 0px 10px;
 }
 
@@ -10,19 +10,20 @@ table{
     border-style: solid;
     border-color: white;
     color: white;
-}
+} */
 
-.book__Online__Div{
+.contact__us__container{
     margin-bottom: 100px;
 }
 
-.book__Online__Div__Wrapper{
+.sub__contact__us__container{
     width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.forms{
+.forms,
+.forms__message{
     width: 750px;
     display: flex;
     margin-left: auto;
@@ -31,41 +32,49 @@ table{
     border-color: black;
 }
 
+.forms__message{
+    height: 200px;
+}
 
-.forms__Label{
+.forms__label{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     text-align: start;
+    text-transform: uppercase;
     color: #FEDB97;
+    
 }
 
-.forms__Div{
+
+
+/* .formsDiv{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 750px;
     justify-content: space-between;
-}
+} */
 
-.forms__Time__Div{
+/* .formsTimeDiv{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
-}
+} */
 
-.forms__Item{
+/* .formsItem{
     width: 200px;
     height: 40px;
     border-width: 2px;
     border-color: black;
-}
+} */
 
-.forms__Sub__Div{
+/* .formsSubDiv{
     height: 40px;
-}
-
-.forms__Item1{
+} */
+/* 
+.formsItem1{
     width: 80%;
     height: 40px;
     margin-left: 0 ;
@@ -73,12 +82,7 @@ table{
     border-color: black;
     border-radius: 10px;
 
-}
-option:hover{
-    background-color:#fedc97d4 !important;
-    border-color: transparent;
-    color: white;
-}
+} */
 
 .alert{
     margin-top: 30px;
@@ -88,67 +92,73 @@ option:hover{
     background-color: rgba(238, 248, 208, 0.977);
 }
 
-.alertText{
+.alert__Text{
     font-size: 17px;
 }
 
 .button{
     width: 150px;
-    background-color: transparent !important;
-    border: 2px solid #FEDB97;
-    color:#FEDB97;
-    transition: 2s;
-    font-size: 20px;
-}
-
-.button:hover{
-    background-color:#fedc97d4 !important;
-    border-color: transparent;
-    color: white;
 }
 
 .title{
-    margin-top: 50px;
+    text-transform: uppercase;
     color: #FEDB97;
-    font-family: Bodoni MT ;
-    font-size: 78px;
-    /* width: 380px; */
-    /* background-color: aqua; */
 }
 
-.forms__Text1,
-.forms__Text{
-    color: #FEDB97;
+.btn__conteiner{
+    display: flex;
+    margin-top: 10px;
 }
+
 
 @media all and (max-width: 700px){
-    .book__Online__Div{
+    .contact__us__container{
         width:100% !important;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .table, .book__Online__Div__Wrapper{
+    .sub__contact__us__container{
         margin-left: auto;
         margin-right: auto;
     }
 
-    .book__Online__Div__Wrapper, .forms, .forms__Div{
+    .sub__contact__us__container, .forms, .forms__message{
         width: 350px;
     }
     
-    .forms__Div{
+    /* .formsDiv{
         flex-direction: column !important;
     }
-    .forms__Item1{
+    .formsItem1{
         margin-left: 0;
     }
 
-    .forms__Sub__Div{
+    .formsSubDiv{
         margin-bottom: 20px;
     }
-    .forms__Text1{
+    .formsText1{
         margin-left: -130px;
+    } */
+
+    .title{
+        padding-top: 30px;
     }
 
+    .btn__conteiner{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .button__submit{
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        font-size: 1.5rem !important;
+    }
+    .contact__us__container{
+        margin-bottom: -20px !important;
+    }
 }

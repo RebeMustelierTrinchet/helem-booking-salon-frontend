@@ -1,0 +1,95 @@
+.main__container{
+    background-image: url('./../../images/R1.JPG');
+    width: 95%;
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 25px;
+    align-content: center;
+}
+
+.text__conteiner{
+    /* background-color: blue; */
+    margin-bottom:-20px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 120px;
+
+}
+
+.text,
+.text2{
+    color: #FEDB97;
+    font-family: Bodoni MT ;
+    font-size: 78px;
+    width: 380px;
+    text-align: start;
+    text-shadow: 1px 1px black; 
+    transition: transform 2s, text-shadow 5s ease;
+   
+}
+
+.text2{
+    position: absolute;
+    z-index: 1;
+    /* background-color: aqua; */
+    height: 63px;
+    bottom:41px;
+    transition: 2s;
+}
+
+.text2__conteiner{
+    position: relative; 
+    z-index: 1;
+    /* background-color: rgb(255, 81, 0); */
+    height:64px;
+    width: 380px;
+    overflow: hidden;
+    margin-top:0;
+}
+.text{
+    /* background-color: rgb(196, 255, 224); */
+    transition: 2s;
+    height: 78px;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    /* z-index: 1; */
+}
+
+
+.text__conteiner:hover .text{
+    transform: translateX(-10px) skewX(12deg);
+    cursor: pointer;
+    text-shadow: 5px 2px black; 
+}
+
+.text__conteiner:hover .text2{
+    transform: translateX(10px) skewX(12deg);
+    cursor: pointer;
+    text-shadow: 5px 2px black; 
+}
+
+.line{
+    color: transparent;
+    background-color:transparent !important;
+    height: 2px;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 3s;
+    opacity: 1;
+}
+.text__conteiner:hover .line{
+    display: flex;
+}
+
+
+    

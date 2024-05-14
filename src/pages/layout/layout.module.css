@@ -7,16 +7,7 @@
     top: -20px;
 }
 
-.contenedorPrincipal{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: black;
-    z-index: 1;
-    
-}
+
 .contenedorDestino{  
     text-decoration: none; 
 }
@@ -57,12 +48,13 @@ a:hover{
 }
 
 .body{
-    background-color: rgba(42, 42, 42, 0.51);
+    /* background-color: rgba(42, 42, 42, 0.51); */
     margin-top: 50px;
+    min-height: 50vh;
     /* height: 100% !important; */
 }
 .main__container{
-    background-color: rgba(42, 42, 42, 0.51);
+    background-color: rgba(107, 106, 106, 0.51);
     height: 100% !important;
     display: flex;
     flex-direction: column;
@@ -78,17 +70,17 @@ a:hover{
     position: relative;
     min-height: 100vh;
     /* background-color: aqua; */
-    padding-bottom: 300px ;
+    /* padding-bottom: 300px ; */
     
 }
 
 .footer{
     /* margin-bottom: 0; */
     /* height: 100%; */
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 100%; */
 
 }

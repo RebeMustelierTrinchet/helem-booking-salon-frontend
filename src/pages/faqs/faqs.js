@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./faqs.module.css";
 
 import Accordion from "react-bootstrap/Accordion";
+import FaqHeader from "../../components/faqHeader/FaqHeader";
 
 const ITEMS = [
   {
@@ -50,6 +51,9 @@ const ITEMS = [
 export default function Faqs() {
   return (
     <div className={styles.main__container}>
+      <div className={styles.faq__header__conteiner}>
+        <FaqHeader/>
+      </div>
       <Accordion defaultActiveKey="1" className={styles.Accordion__container}>
         {ITEMS.map((item, itemIndex) => {
           return (

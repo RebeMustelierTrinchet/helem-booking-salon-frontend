@@ -26,7 +26,7 @@ import { CgMail } from "react-icons/cg";
             <Nav.Link className={styles.btn__displacement} href="/">Home</Nav.Link>
             <Nav.Link className={styles.btn__displacement} href="/faqs">Faqs</Nav.Link>
             <Nav.Link className={styles.btn__displacement} href="/gallery">Gallery</Nav.Link>
-            <Nav.Link className={styles.btn__displacement} href="/contact-us">Contact Us</Nav.Link>
+            {/* <Nav.Link className={styles.btn__displacement} href="/contact-us">Contact Us</Nav.Link> */}
             <Nav.Link className={styles.btn__displacement} href="/bookOnline">Book Online</Nav.Link>
     
           </Nav>

@@ -1,12 +1,14 @@
 .main__container{
     width: 100%;
-    height: 200px;
-    padding: 0 3em;
+    min-height: 200px;
+    padding: 40px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     background-color: black;
     color:rgba(255, 255, 255, 0.895);
-    z-index: -2000;
+    /* z-index: -2000; */
     margin-top: 100px;
     margin-bottom: 0;
 }
@@ -34,6 +36,8 @@
 .Image__container{
     margin-left:200px;
     display: flex;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .image{
@@ -48,6 +52,10 @@
 .footer__Wrapper__Div{
     display: flex;
     flex-direction: column;
+    /* background-color: aqua; */
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .List__container :hover, .boton :hover, .botonDestino :hover{
@@ -57,10 +65,20 @@
 
 .contText{
     margin-left: 50px;
+    /* background-color: aqua; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .text{
     font-size: 15px;
+    /* background-color: aqua; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .btn__social__media{
