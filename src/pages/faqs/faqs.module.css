@@ -36,6 +36,12 @@ button {
         margin-left: auto;
         margin-right: auto;   
     }
+ 
+.faq__header__conteiner{
+    height: auto;
+    margin-bottom:15px;
+    /* background-color: aqua; */
+}
     .Accordion__container{
         width: 95%;
         margin-left: auto;

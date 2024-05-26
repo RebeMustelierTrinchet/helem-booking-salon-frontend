@@ -19,7 +19,7 @@ export default function ContacUs() {
     const onSubmit = async (e) => {
         e.preventDefault()
         const body = JSON.stringify({
-            name: customer,
+            customer,
             phone,
             email,
             message,

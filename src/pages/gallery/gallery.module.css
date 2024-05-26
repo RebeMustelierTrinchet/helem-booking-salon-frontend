@@ -115,6 +115,7 @@
     background-color: rgb(23, 23, 23);
     opacity: 1;
     animation: disapiar 1s;
+    animation-delay: 0.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -180,4 +181,24 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .tr_container,
+    .td_container{
+   
+    width: 30px;
+    height: 20px; 
+    z-index: 100;
+    padding: 0;
+}
+
+.table{
+    position: absolute;
+    overflow: hidden;
+    width: 120%;
+    height: 140%;
+    top: -100px;
+    left: -50px;
+    
+}
+
 }

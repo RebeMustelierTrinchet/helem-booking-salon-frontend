@@ -7,7 +7,7 @@ const API_DOMAIN = process.env.REACT_APP_API_DOMAIN
 export const createMessage = async(body, setMessages) => {
 
 
-    const URL = `${API_DOMAIN}/message/`
+    const URL = `${API_DOMAIN}/messages/`
 
     const headerConfig = {
         headers: {

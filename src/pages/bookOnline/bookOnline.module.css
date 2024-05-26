@@ -139,6 +139,7 @@ option:hover{
     
     .forms__Div{
         flex-direction: column !important;
+        /* background-color: aqua; */
     }
     .forms__Item1{
         margin-left: 0;
@@ -146,9 +147,11 @@ option:hover{
 
     .forms__Sub__Div{
         margin-bottom: 20px;
+       width: 100%;
     }
     .forms__Text1{
-        margin-left: -130px;
+        margin-left: -0px;
+        margin-right: 10PX;
     }
 
 }

@@ -93,3 +93,28 @@
 
 
     
+@media all and (max-width: 700px){
+    .main__container{
+        background-image: url('./../../images/R1.JPG');
+        width: 95%;
+        height: 45vh;
+        background-size: cover;
+        /* margin-bottom: 25px; */
+        align-content: center;
+    }
+
+    .text,
+    .text2{
+        font-size: 50px;
+        width: 380px;
+        /* background-color: aqua; */
+        text-align: center;
+        z-index: 100;
+    }
+    .text2{
+        display: none;
+    }
+    
+
+
+}
