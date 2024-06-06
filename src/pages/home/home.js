@@ -9,6 +9,8 @@ import CarouselHome from '../../components/carouselHome/carouselHome';
 import CarouselMovilView from './../../components/carouselMovilView/carouselMovilView'
 import ContacUs from '../../components/contacUs/contacUs';
 import CarouselHomeCopy from '../../components/carouselHome copy/carouselHome';
+// import Feature_services from '../../components/Featured-Services/Featured-Services';
+import CircularCarousel from '../../components/Featured-Services/Featured-Services';
 
 const IMAGES = [Rebeca, Capture, IMG]
 
@@ -20,6 +22,7 @@ export default function Home() {
         <CarouselHomeCopy/>
         <CarouselMovilView/>
         <ContacUs/>
+        <CircularCarousel/>
       </div>
       
     </div>

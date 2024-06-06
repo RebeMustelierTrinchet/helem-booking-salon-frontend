@@ -54,7 +54,7 @@ a:hover{
     /* height: 100% !important; */
 }
 .main__container{
-    background-color: rgba(107, 106, 106, 0.51);
+    background-color: rgba(7, 7, 7, 0.823);
     height: 100% !important;
     display: flex;
     flex-direction: column;
