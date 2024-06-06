@@ -64,9 +64,9 @@ const CircularCarousel = () => {
     const handleResize = () => {
       if (window.innerWidth <= 600) {
         setDimensions({
-          radius: 220,
-          centerX: 110,
-          centerY: 155
+          radius: 210,
+          centerX: 115,
+          centerY: 125
         });
       } else {
         setDimensions({
@@ -113,6 +113,32 @@ const CircularCarousel = () => {
     document.removeEventListener('mouseup', handleMouseUp);
   };
 
+  const handleTouchStart = (e, index) => {
+    e.preventDefault();
+    setInitialAngle(angles[index]);
+    setSelectedServiceInfo(circlesData[index]);
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    document.addEventListener('touchend', handleTouchEnd);
+  };
+
+  const handleTouchMove = (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const { clientX, clientY } = touch;
+    const touchX = clientX - dimensions.centerX;
+    const touchY = clientY - dimensions.centerY;
+    const newAngles = angles.map((angle) =>
+      angle + (angleStep * touchX * 0.2) / dimensions.radius
+    );
+    setAngles(newAngles);
+  };
+
+  const handleTouchEnd = () => {
+    setInitialAngle(null);
+    document.removeEventListener('touchmove', handleTouchMove);
+    document.removeEventListener('touchend', handleTouchEnd);
+  };
+
   const handleNext = () => {
     const newAngles = angles.map((angle) =>
       angle + angleStep
@@ -149,6 +175,7 @@ const CircularCarousel = () => {
               transform: `translate(${dimensions.centerX + dimensions.radius * Math.cos(angle)}px, ${dimensions.centerY + dimensions.radius * Math.sin(angle)}px)`,
             }}
             onMouseDown={(e) => handleMouseDown(e, index)}
+            onTouchStart={(e) => handleTouchStart(e, index)}
           >
             <img
               className={styles.image}
