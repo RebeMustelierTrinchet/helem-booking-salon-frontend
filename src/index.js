@@ -11,7 +11,8 @@ import Gallery from './pages/gallery/gallery';
 import Layout from './pages/layout/layout';
 import Faqs from './pages/faqs/faqs'
 import Emails from './pages/email/email';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Contact from './pages/contact/contact';
 
 const rootElement = document.getElementById("root");
 render(
@@ -23,6 +24,7 @@ render(
         <Route exact path="/bookOnline" element={<BookOnline />} />
         <Route exact path="/gallery" element={<Gallery />} />
         <Route exact path="/emails" element={<Emails />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </Layout>
   </Router>,

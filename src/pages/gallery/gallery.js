@@ -11,6 +11,7 @@ import I3 from "./imagenes/I3.jpg"
 import I4 from "./imagenes/I4.jpg"
 import I5 from "./imagenes/I5.jpg"
 import I6 from "./imagenes/I6.jpg"
+import Carousel_Gallery from "../../components/gallery-carrousel/gallery";
 
 
 
@@ -24,11 +25,11 @@ export default function Gallery() {
   return (
 
     <div className={styles.main__container} >
-      <div className={styles.carousel__container}>
-        <Carousel variant="dark" className={styles.carousel}>
+      {/* <div className={styles.carousel__container}>
+        <Carousel variant="dark" className={styles.carousel} slide={false}>
           {IMAGES.map((image, index) => {
             return (
-              <Carousel.Item interval={9000} key={index} className={styles.carousel__Item}>
+              <Carousel.Item interval={10000} key={index} className={styles.carousel__Item}>
 
                 <div className={styles.carousel__Item__Div}>
                   <div className={styles.image__container}>
@@ -55,7 +56,8 @@ export default function Gallery() {
             );
           })}
         </Carousel>
-      </div>
+      </div> */}
+      <Carousel_Gallery/>
 
       <div className={styles.comments__container}>
         <Comments />

@@ -13,7 +13,9 @@ table{
 }
 
 .book__Online__Div{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    min-height: 100vh;
+
 }
 
 .book__Online__Div__Wrapper{
@@ -38,6 +40,8 @@ table{
     margin-right: auto;
     text-align: start;
     color: #FEDB97;
+    /* background-color: aqua; */
+    margin-top: 10px;
 }
 
 .forms__Div{
@@ -59,6 +63,7 @@ table{
     height: 40px;
     border-width: 2px;
     border-color: black;
+    display: flex;
 }
 
 .forms__Sub__Div{
@@ -68,7 +73,7 @@ table{
 .forms__Item1{
     width: 80%;
     height: 40px;
-    margin-left: 0 ;
+    margin-left: 3px !important;
     border-width: 2px;
     border-color: black;
     border-radius: 10px;
@@ -119,6 +124,16 @@ option:hover{
 .forms__Text1,
 .forms__Text{
     color: #FEDB97;
+    margin-right: 5px;
+    /* background-color: aqua; */
+}
+
+.forms__Text{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    align-content: center;
 }
 
 @media all and (max-width: 700px){
