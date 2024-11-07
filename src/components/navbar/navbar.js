@@ -3,7 +3,7 @@
  import Nav from 'react-bootstrap/Nav';
  import Navbar from 'react-bootstrap/Navbar';
  import NavDropdown from 'react-bootstrap/NavDropdown';
- import Capture1 from "../../pages/layout/imagenes/Capture1.PNG";
+ import Capture1 from "../../images/logo.png";
 import Capture from "../../pages/layout/imagenes/Capture.PNG";
 import styles from "./navbar.module.css";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -17,7 +17,6 @@ import { CgMail } from "react-icons/cg";
         <Navbar.Brand href="/" >
                 <div>
                     <img className={styles.image} src={Capture1}></img>
-                    <img className={styles.image1} src={Capture}></img>
                 </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -27,7 +26,7 @@ import { CgMail } from "react-icons/cg";
             <Nav.Link className={styles.btn__displacement} href="/faqs">Faqs</Nav.Link>
             <Nav.Link className={styles.btn__displacement} href="/gallery">Coments</Nav.Link>
             <Nav.Link className={styles.btn__displacement} href="/contact">Contact Us</Nav.Link>
-            <Nav.Link className={styles.btn__displacement} href="/bookOnline">Book Online</Nav.Link>
+            {/* <Nav.Link className={styles.btn__displacement} href="/bookOnline">Book Online</Nav.Link> */}
     
           </Nav>
           <Nav className={styles.btn__social__media__container}>

@@ -12,6 +12,7 @@ import I4 from "./imagenes/I4.jpg"
 import I5 from "./imagenes/I5.jpg"
 import I6 from "./imagenes/I6.jpg"
 import Carousel_Gallery from "../../components/gallery-carrousel/gallery";
+import Gallery_Movil_View from "../../components/gallery-movil/carouselMovilView";
 
 
 
@@ -58,6 +59,7 @@ export default function Gallery() {
         </Carousel>
       </div> */}
       <Carousel_Gallery/>
+      <Gallery_Movil_View/>
 
       <div className={styles.comments__container}>
         <Comments />

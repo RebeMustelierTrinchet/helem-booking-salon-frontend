@@ -41,12 +41,7 @@
 }
 
 .image{
-    height: 80px
-}
-.image1{
-    height: 40px;
-    position: relative;
-    top: 20px;
+    height: 200px
 }
 
 .footer__Wrapper__Div{
@@ -62,11 +57,15 @@
     color: rgba(207, 151, 46, 0.944);
     cursor: pointer;
 }
+.list__container{
+    /* background-color: aqua; */
+    transform: translateX(-38px);
+}
 
 .contText{
     margin-left: 50px;
     /* background-color: aqua; */
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,17 +75,18 @@
 .text{
     font-size: 15px;
     /* background-color: aqua; */
-    text-align: center;
-    display: flex;
+    text-align:start;
+    /* display: flex; */
     justify-content: center;
 }
 
 .btn__social__media{
     margin-left: 5px;
     border-radius: 50%;
-    text-align: center ;
+    text-align: left !important ;
     width: 40px;
     height: 40px;
+    /* background-color: brown; */
 }
 
 .table__container{
@@ -129,25 +129,29 @@
     .List__container{
         display: flex;
         flex-direction: row;
-        margin: auto;
+        /* margin: auto; */
+        /* transform: translateX(-50px); */
+    }
+    .list__container{
+        height: 60px !important;
     }
     .List__container, .contText{
         width: 100%;
-        margin-left: -50px;
+        /* margin-left: -50px; */
+    }
+    .btn__social__media{
+        font-size: 30px;
     }
 
-    .conText, .table__container, .List__container, .footer__Wrapper__Div{
+    .conText, .table__container,  .footer__Wrapper__Div{
         margin-top: 50px;
     }
 
-    .List__container{
-        width: 100%;
-    }
 
     .botonNav, .text{
         font-size: 20px;
         text-align: start;
-        margin: auto;
+        /* margin: auto; */
         width :100%;
         margin-bottom: 10px;
     }
@@ -156,7 +160,7 @@
         margin: auto;
     }
     .btn__displacement{
-        margin: auto;
+        /* margin: auto; */
         margin-top: 10px;
     }
     .btn__displacement:hover{
@@ -164,16 +168,17 @@
     }
     .footer__Wrapper__Div{
         display: flex;
-        text-align: center;
+        text-align:start !important;
         width: 100%;
         margin-bottom: 20px;
+        justify-content: flex-start !important;
     }
 
     .table__container{
         display: none;
     }
 
-    .contText, .List__container, .Image__container{
+    .contText{
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
@@ -181,5 +186,13 @@
 
     .text{
         text-align: justify;
+    }
+
+    .Image__container{
+        margin-top: -10px !important;
+    }
+
+    .image{
+        height: 200px;
     }
 }

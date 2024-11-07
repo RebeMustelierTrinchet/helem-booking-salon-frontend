@@ -18,7 +18,8 @@ export default function Home() {
       <div className={styles.carousel__container}>
         <CarouselHomeCopy/>
         <CarouselMovilView/>
-        <ImportanceOfImage/>
+        {/* <ImportanceOfImage/> */}
+        <h3 className={styles.title}>What we offerd ?</h3>
         <CircularCarousel/>
       </div>
       

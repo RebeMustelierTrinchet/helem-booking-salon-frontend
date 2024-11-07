@@ -1,3 +1,7 @@
+:root {
+    --background-color:rgba(206, 206, 206, 0.823)
+    
+}
 .imagen{
     height: 80px
 }
@@ -54,7 +58,7 @@ a:hover{
     /* height: 100% !important; */
 }
 .main__container{
-    background-color: rgba(7, 7, 7, 0.823);
+    background-color: rgba(146, 143, 143, 0.823);
     height: 100% !important;
     display: flex;
     flex-direction: column;

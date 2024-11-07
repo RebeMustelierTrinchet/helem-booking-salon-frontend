@@ -89,7 +89,7 @@ export default function CarouselHome() {
           care specialists offer you the most innovative and efective treatments. Feel bueautiful
           and confident with helthy and shiny hair.
         </p>
-        <div className={styles.schedule_button_div}><button className={styles.schedule_button}><Link to="/bookOnline"> Book Online</Link></button></div>
+        <div className={styles.schedule_button_div}><button className={styles.schedule_button}>Book Online</button></div>
       </div>
       
     </div>

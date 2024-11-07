@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Featured_Services.module.css';
 import img from './../../images/Untitled.png';
-import haircut from './../../images/R.png';
-import hair_coloring from './../../images/2022-hair-color-trends-3-182x300.jpg';
+import haircut from './../../images/cut.jpeg';
+import hair_coloring from './../../images/color.jpeg';
 import hair_party from './../../images/OIP.jpg';
-import hair_treatments from './../../images/OIP (1).jpg';
+import hair_treatments from './../../images/treatment.jpg';
 import makeup from './../../images/OIP (2).jpg';
 import promo from './../../images/OIP (3).jpg';
 
@@ -159,6 +159,7 @@ const CircularCarousel = () => {
 
   return (
     <main className={styles.main_container}>
+      
       {selectedServiceInfo && (
         <div className={styles.info}>
           <h2 className={styles.title}>{selectedServiceInfo.service}</h2>

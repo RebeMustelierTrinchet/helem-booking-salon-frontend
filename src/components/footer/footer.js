@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css"
-import Capture1 from "../../pages/layout/imagenes/Capture1.PNG"
-import Capture from "../../pages/layout/imagenes/Capture.PNG"
+import Capture1 from "../../images/logo.png"
 import { Link } from 'react-router-dom';
 import { CgMail } from "react-icons/cg";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -47,13 +46,14 @@ export default function Footer(){
                    <button className={styles.btn__displacement}><Link to="/">HOME</Link></button>
                     <button className={styles.btn__displacement}><Link to="/faqs"> FAQS </Link></button>
                     <button className={styles.btn__displacement}><Link to="/gallery"> GALLERY </Link></button>
-                    {/* <button className={styles.btn__displacement}><Link to="/contact-us"> CONTACT US </Link></button> */}
-                    <button className={styles.btn__displacement}><Link to="/bookOnline"> BOOK ONLINE </Link></button>
+                    <button className={styles.btn__displacement}><Link to="/contact-us"> CONTACT US </Link></button>
+                    {/* <button className={styles.btn__displacement}><Link to="/bookOnline"> BOOK ONLINE </Link></button> */}
            </div>
            
             <div  className={styles.contText}>
-                <h1 className={styles.text}>9313 Tallyho rd apt 401, Houston TX 77017</h1>
-                <div>
+                <p className={styles.text}>416 N sam Houston Parkway East suite f 77060</p>
+                <p className={styles.text}>tel: 832-929-2923</p>
+                <div className={styles.list__container}>
                     <ul className={styles.List__container}>
                         <li className={styles.btn__social__media} Link to="https://www.facebook.com/profile.php?id=100082191186102"><FaFacebookF /></li>
                         <li className={styles.btn__social__media} Link to="https://www.instagram.com/hellentrinchet/"><FaInstagram /></li>
@@ -64,21 +64,8 @@ export default function Footer(){
             </div>
             <div className={styles.Image__container}>
                 <img className={styles.image} src={Capture1} alt="Helem Salon logo part 1" />
-                <img className={styles.image1} src={Capture} alt="Helem Salon logo part 2" />
             </div>
-            <div className={styles.table__container}>
-                <table className={styles.Table}>
-                    {SCHEDULE.map((item, index) => {
-                        return(
-                            <tr key={index}>
-                            <td className={styles.table__item}>{item.day}</td>
-                            <td className={styles.table__item}>{item.time}</td>
-                            </tr>
-                        );
-                     })}
-                </table>
-            </div>
-
+            
         </div>
     )
 }
