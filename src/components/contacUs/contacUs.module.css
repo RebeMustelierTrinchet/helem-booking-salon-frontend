@@ -1,5 +1,6 @@
 .main__container{
     display:flex;
+    flex-wrap: wrap;
     align-content: center;
     width: 70%;
     margin: auto;
@@ -12,14 +13,16 @@
     width: 400px;
     height: 350px;
     display: flex;
-    border-right: 3px solid rgba(207, 151, 46, 0.944);
     margin-top: 30px;
 }
-
+.image2{
+    display: none;
+}
 .image__container{
     width: 100%;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .information__container{
@@ -28,6 +31,8 @@
     margin-left: 3%;
     border-color: black;
     width: 350px;
+    padding-left: 30px;
+    border-left: 3px solid rgba(207, 151, 46, 0.944);
     
 }
 .text1{
@@ -56,12 +61,19 @@
         margin-left: auto;
         margin-right: auto;
         width: 90%;
-        text-align: center;
+        text-align: start;
     }
     .image{
-        width: 100%;
+        display: none;
+    }
+    .image2{
+        display: flex;
+        width: 90%;
     }
 
+    .information__container{
+        margin-top: 30px;
+    }
     .information__container, .image{
         margin-left: auto;
         margin-right: auto;
