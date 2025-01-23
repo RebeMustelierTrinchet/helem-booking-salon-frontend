@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./carouselHome.module.css";
+import { Link } from 'react-router-dom';
 
 import IMG1_1 from'./imagenes/IMG1.1.jpg';
 import IMG1_2 from'./imagenes/IMG1.2.jpg';
@@ -19,7 +20,6 @@ import I2 from "./imagenes/Rebeca.jpg";
 import I3 from "./imagenes/IMG1.jpg";
 
 
-import { Link } from 'react-router-dom';
 
 
 export default function CarouselHomeCopy() {
@@ -85,11 +85,15 @@ export default function CarouselHomeCopy() {
 
       <div className={styles.text__container}>
         <p className={styles.text__container__paragraph}>
-          {'   '}Dream of perfect hair and make it come tru in our beauty salon. Our hair
+          {'   '}Dream of perfect hair and make it come true in our beauty salon. Our hair
           care specialists offer you the most innovative and efective treatments. Feel bueautiful
           and confident with helthy and shiny hair.
         </p>
-        <div className={styles.schedule_button_div}><button className={styles.schedule_button}>Book Online</button></div>
+        <div className={styles.schedule_button_div}>
+          <Link to="/bookOnline">
+            <button className={styles.schedule_button}>Book Online</button>
+          </Link>
+        </div> 
       </div>
 
      
